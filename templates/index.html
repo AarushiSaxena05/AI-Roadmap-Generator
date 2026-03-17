@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Roadmap Generator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #dbeafe, #e0f2fe);
+            text-align: center;
+        }
+
+        .container {
+            width: 60%;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        input, select {
+            padding: 10px;
+            width: 80%;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: #1e3a8a;
+        }
+
+        ul {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+<h2>🚀 AI Roadmap Generator</h2>
+<p>Get your personalized career roadmap instantly</p>
+</div>
+
+<div class="card">
+<form method="POST">
+
+<select name="goal">
+    <option value="ai_engineer">AI Engineer</option>
+    <option value="data_scientist">Data Scientist</option>
+    <option value="web_developer">Web Developer</option>
+</select>
+
+<br>
+
+<input type="text" name="skills" placeholder="Enter your skills (comma separated)">
+
+<br>
+
+<button type="submit">Generate Roadmap</button>
+
+</form>
+</div>
+
+{% if result %}
+
+<div class="card">
+<h3>📌 Missing Skills</h3>
+<ul>
+{% for skill in result.missing_skills %}
+<li>{{ skill }}</li>
+{% endfor %}
+</ul>
+
+<h3>📚 Recommended Resources</h3>
+<ul>
+{% for r in result.resources %}
+<li>{{ r }}</li>
+{% endfor %}
+</ul>
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>

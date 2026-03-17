@@ -1,0 +1,55 @@
+{
+  "ai_engineer": {
+    "skills": [
+      "Python",
+      "Linear Algebra",
+      "Machine Learning",
+      "Deep Learning",
+      "NLP",
+      "Computer Vision",
+      "Projects",
+      "Portfolio"
+    ],
+    "resources": [
+      "Coursera ML Course",
+      "FastAI",
+      "Kaggle",
+      "GitHub Projects"
+    ]
+  },
+
+  "data_scientist": {
+    "skills": [
+      "Python",
+      "Statistics",
+      "Data Analysis",
+      "Visualization",
+      "Machine Learning",
+      "Projects"
+    ],
+    "resources": [
+      "Kaggle",
+      "DataCamp",
+      "Coursera",
+      "Portfolio Building"
+    ]
+  },
+
+  "web_developer": {
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Backend",
+      "Database",
+      "Deployment"
+    ],
+    "resources": [
+      "MDN Docs",
+      "FreeCodeCamp",
+      "GitHub Projects",
+      "Netlify"
+    ]
+  }
+}
